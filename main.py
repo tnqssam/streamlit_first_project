@@ -1,3 +1,3 @@
 import streamlit as st
-st.header('안녕! 스트림릿!')
+st.header('Hello, Streamlit')
 st.write('반가워!!')
