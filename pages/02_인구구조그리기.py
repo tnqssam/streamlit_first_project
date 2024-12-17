@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import koreanize_matplotlib
 
 # CSV 파일 불러오기
 data = pd.read_csv('age2411.csv')
