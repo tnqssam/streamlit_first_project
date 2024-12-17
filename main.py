@@ -43,4 +43,40 @@ mbti_data = {
         "partner": "💃 ISFP나 ESTP와 함께 즐거운 시간을 보낼 수 있어요."
     },
     "ENFP": {
-       
+        "job": "🌈 창의적이고 열정적인 ENFP는 마케터, 카운슬러, 이벤트 플래너가 어울려요.",
+        "partner": "🔥 INTJ나 INFJ와 함께하면 서로에게 영감을 줄 수 있어요."
+    },
+    "ENTP": {
+        "job": "💡 아이디어 뱅크인 ENTP는 창업가, 컨설턴트, 변호사로 두각을 나타내요.",
+        "partner": "🌟 INFJ나 INTJ와의 만남은 큰 시너지를 만들어낼 거예요."
+    },
+    "ESTJ": {
+        "job": "🛠️ 리더십과 실용성을 가진 ESTJ는 관리자, 공무원, 기업 임원에 어울려요.",
+        "partner": "🤝 ISFJ나 ESFJ와 신뢰를 바탕으로 든든한 관계를 만들어요."
+    },
+    "ESFJ": {
+        "job": "🌟 따뜻하고 친절한 ESFJ는 교사, 간호사, 서비스직에서 빛나요.",
+        "partner": "💖 ISTJ나 ESTJ와 함께할 때 안정적이고 행복해져요."
+    },
+    "ENFJ": {
+        "job": "🤝 사람을 이끄는 ENFJ는 리더, 상담사, 코치로 잘 어울려요.",
+        "partner": "💞 INFP나 INTJ와 깊은 유대감을 형성할 수 있어요."
+    },
+    "ENTJ": {
+        "job": "👑 타고난 리더 ENTJ는 경영자, 전략 컨설턴트, 기업 임원에 어울려요.",
+        "partner": "⚡ ENFP나 INTP와 함께라면 목표를 향해 멋지게 나아갈 수 있어요."
+    }
+}
+
+# 스트림릿 앱
+st.title("✨ 나의 MBTI와 찰떡 직업/궁합 찾기! ✨")
+
+# 드롭다운 메뉴로 MBTI 선택
+selected_mbti = st.selectbox("당신의 MBTI 유형을 선택하세요 😊", list(mbti_data.keys()))
+
+# 결과 보여주기
+if selected_mbti:
+    st.subheader("🔍 결과 확인!")
+    st.write(f"**직업 추천:** {mbti_data[selected_mbti]['job']}")
+    st.write(f"**잘 맞는 사람:** {mbti_data[selected_mbti]['partner']}")
+    st
